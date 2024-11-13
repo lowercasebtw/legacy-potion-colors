@@ -21,6 +21,6 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.3",
-		"midnightlib": ">=1.5.7"
+		"midnightlib": ">=1.5.5"
 	}
 }
