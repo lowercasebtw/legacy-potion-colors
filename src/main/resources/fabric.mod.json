@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "legacy-potion-colors",
+	"version": "${version}",
+	"name": "Legacy Potion colors",
+	"description": "Brings back the pre 1.19.3 potion colors and glint!",
+	"authors": ["lowercasebtw"],
+	"contact": {
+		"sources": "https://github.com/lowercasebtw/legacy-potion-colors"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/legacy-potion-colors/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"btw.lowercase.lpc.LegacyPotionColors"
+		]
+	},
+	"mixins": [
+		"legacy-potion-colors.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"midnightlib": ">=1.5.7"
+	}
+}
