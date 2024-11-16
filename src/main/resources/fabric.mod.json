@@ -15,7 +15,8 @@
 		"modmenu": {
 			"links": {
 				"modmenu.modrinth": "https://modrinth.com/mod/legacy-potion-colors"
-			}
+			},
+			"update_checker": true
 		}
 	},
 	"license": "LGPL-2.1",
