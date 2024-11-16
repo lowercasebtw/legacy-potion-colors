@@ -8,7 +8,7 @@
 	"contact": {
 		"sources": "https://github.com/lowercasebtw/legacy-potion-colors"
 	},
-	"license": "CC0-1.0",
+	"license": "LGPL-2.1",
 	"icon": "assets/legacy-potion-colors/icon.png",
 	"environment": "client",
 	"entrypoints": {
