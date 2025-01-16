@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "legacy-potion-colors",
+	"id": "legacy_potion_colors",
 	"version": "${version}",
 	"name": "Legacy Potion Colors",
 	"description": "Brings back the pre 1.19.3 potion colors and glint!",
@@ -20,15 +20,15 @@
 		}
 	},
 	"license": "LGPL-2.1",
-	"icon": "assets/legacy-potion-colors/icon.png",
+	"icon": "assets/legacy_potion_colors/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"client": [
-			"btw.lowercase.lpc.LegacyPotionColors"
+			"btw.lowercase.legacy_potion_colors.LegacyPotionColors"
 		]
 	},
 	"mixins": [
-		"legacy-potion-colors.mixins.json"
+		"legacy_potion_colors.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.3",

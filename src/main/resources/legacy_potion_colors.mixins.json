@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "btw.lowercase.legacy_potion_colors.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MixinInGameHud",
+		"MixinItem",
+		"MixinMobEffect"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

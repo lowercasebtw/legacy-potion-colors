@@ -1,4 +1,4 @@
-package btw.lowercase.lpc;
+package btw.lowercase.legacy_potion_colors;
 
 import eu.midnightdust.lib.config.MidnightConfig;
 

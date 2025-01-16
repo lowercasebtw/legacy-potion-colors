@@ -1,6 +1,6 @@
-package btw.lowercase.lpc.mixin;
+package btw.lowercase.legacy_potion_colors.mixin;
 
-import btw.lowercase.lpc.LegacyPotionConfig;
+import btw.lowercase.legacy_potion_colors.LegacyPotionConfig;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

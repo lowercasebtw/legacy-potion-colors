@@ -1,6 +1,6 @@
-package btw.lowercase.lpc.mixin;
+package btw.lowercase.legacy_potion_colors.mixin;
 
-import btw.lowercase.lpc.LegacyPotionConfig;
+import btw.lowercase.legacy_potion_colors.LegacyPotionConfig;
 import net.minecraft.world.effect.MobEffect;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
