@@ -22,8 +22,11 @@ dependencies {
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
     // Midnightlib
-    modImplementation("maven.modrinth:midnightlib:${project.midnightlib_version}")
+    modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 }
 
 processResources {
