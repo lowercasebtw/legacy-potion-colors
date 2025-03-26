@@ -12,7 +12,7 @@ import java.util.Collection;
 @Mixin(value = Gui.class, priority = Integer.MAX_VALUE)
 public class MixinInGameHud {
     @Redirect(method = "renderEffects", at = @At(value = "INVOKE", target = "Ljava/util/Collection;isEmpty()Z"))
-    private boolean renderEffects$toggleEffectsHud(Collection<MobEffectInstance> instance) {
+    private boolean legacyPotionColors$renderEffects$toggleEffectsHud(Collection<MobEffectInstance> instance) {
         return !LegacyPotionConfig.EFFECTS_HUD || instance.isEmpty();
     }
 }

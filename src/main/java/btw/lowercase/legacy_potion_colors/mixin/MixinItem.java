@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(value = Item.class, priority = Integer.MAX_VALUE)
 public class MixinItem {
     @Inject(method = "isFoil", at = @At("RETURN"), cancellable = true)
-    private void isFoil$potionGlint(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
+    private void legacyPotionColors$isFoil$potionGlint(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
         if (LegacyPotionConfig.POTION_GLINT && stack.getItem() instanceof PotionItem) {
             boolean hasGlintOverrideComponent = stack.getComponents().has(DataComponents.ENCHANTMENT_GLINT_OVERRIDE);
             if (!hasGlintOverrideComponent) {

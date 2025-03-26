@@ -24,7 +24,7 @@ public class MixinMobEffect {
         OLD_POTION_COLORS.put("effect.minecraft.bad_omen", 0xB6138);
         OLD_POTION_COLORS.put("effect.minecraft.blindness", 0x1F1F23);
         OLD_POTION_COLORS.put("effect.minecraft.conduit_power", 0x1DC2D1);
-        OLD_POTION_COLORS.put("effect.minecraft.darkness", 16750848);
+        OLD_POTION_COLORS.put("effect.minecraft.darkness", 16750848); // ? Could be 0x292721?
         OLD_POTION_COLORS.put("effect.minecraft.dolphins_grace", 0x88A3BE);
         OLD_POTION_COLORS.put("effect.minecraft.fire_resistance", 0xE49A3A);
         OLD_POTION_COLORS.put("effect.minecraft.glowing", 0x94A061);
@@ -55,14 +55,12 @@ public class MixinMobEffect {
         OLD_POTION_COLORS.put("effect.minecraft.wither", 0x352A27);
     }
 
-    // 0x292721 // ???
-
     @Shadow
     @Nullable
     private String descriptionId;
 
     @Inject(method = "getColor", at = @At("RETURN"), cancellable = true)
-    private void getColor$oldPotionColors(CallbackInfoReturnable<Integer> cir) {
+    private void legacyPotionColors$getColor$oldPotionColors(CallbackInfoReturnable<Integer> cir) {
         if (LegacyPotionConfig.OLD_POTION_COLORS && descriptionId != null && OLD_POTION_COLORS.containsKey(descriptionId)) {
             cir.setReturnValue(OLD_POTION_COLORS.get(descriptionId));
         }
